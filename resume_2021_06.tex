@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeExpSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}  & \textcolor{mygray}{#2} \\
+      \textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
+      {\scriptsize#5}
+    \end{tabular*}\vspace{4pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Natalia Strekalovskaya} \\ \vspace{1pt}
+    \small +7(929)338-12-00 $\quad|\quad$ \href{mailto:x@x.com}{\underline{natalia.striekalovskaia.2001@mail.ru}} $\quad|\quad$ 
+%    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
+    \href{https://github.com/natalycod}{\underline{github.com/natalycod}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Higher School of Economics}{September 2020 -- expected June 2024}
+      {BS in Applied Mathematics and Computer Science, GPA: 6.04/10}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework:} C ++ development basics, Algorithms and Data Structures, Linear Algebra and Geometry, Discrete Mathematics, Mathematical Analysis, Calculus}
+      \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textbf{Personal Projects}}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Calender with notes} $|$ \emph{C\#}}{Autumn 2019}
+          \resumeItemListStart
+            \resumeItem{Developed graphical user interface and logic for the calender and daily notes using Windows Forms}\\
+            \resumeItem{Processed user’s actions and validated input data}\\
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{6 handshakes theory check in VK} $|$ \emph{Python3}}{Spring 2018}
+          \resumeItemListStart
+            \resumeItem{Used VK Open API to check the distance between 2 users}
+            \resumeItem{Developed graphical user interface for the user data}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+%-----------COMPETITIVE PROGRAMMING-----------
+\section{\textbf{Competitive programming}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Google Code Jam to I/O for Women}{2019}
+      {finalist -- 87th place of about 1100 participants}{}
+    \resumeSubheading
+      {Open Olympiad of Informatics}{2018 -- 2019}
+      {silver medal - 50th place of more than 2000 participants}{}
+    \resumeSubheading
+      {Technocup}{2018 -- 2019}
+      {bronze medal -- 54th place of more than 7000 participants}{}
+    \resumeSubheading
+      {Russian Olympiad of Informatics}{2017 -- 2018}
+      {finalist -- 115th place of more than 30000 participants}{}
+    \resumeSubheading
+      {Russian Olympiad of Informatics}{2018 -- 2019}
+      {finalist -- 119th place of more than 30000 participants}{}
+    \resumeSubheading
+      {All-Russian Olympiad of Computer Science “Vysshaya Proba”}{2017 -- 2018}
+      {gold medal - 1st place of about 2000 participants}{}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\textbf{Technical Skills}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Python3} \\
+     \textbf{Software and Tools}{: Latex, Visual Studio, Wing IDE}
+    }}
+ \end{itemize}
+%-------------------------------------------
+
+%-----------ACHIVEMENTS------------------------
+\section{\textbf{Achievements}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Mathematics}{: finalist of All-Siberian Open Olympiad (silver medal 2016, gold medal 2017), All-Russian Olympiad of Maths “Vysshaya Proba” (silver medal 2017), Third Millenium (silver medal 2016, bronze medal 2017, silver medal 2018), participant of summer maths schools, where learn both olympiad's problems and the science.}}}\\
+     \small{\item{
+     \textbf{Education}{: Moscow Workshop Juniors 2018, programming camp based on MIPT;\quad Summer Informatics School 2017, 2018;\quad Informatics School "Perspective"; SFU Science Schools; Educational Center Sirius 2018. In all camps learned advanced algorithms and data structures, had daily contests. }}}\\
+     \small{\item{
+     \textbf{Teaching}{: Summer Informatics School 2019, 2019.Winter, 2020.Winter. Lectured every 3-4 days, prepared contests, organised schoolchild's leisure. }}} \\
+     \small{\item{
+     \textbf{Volunteering}{: have helped in organization of Russian Olympiad and Open Olympiad in Informatics.} \\
+    }}
+    
+ \end{itemize}
+
+\end{document}
